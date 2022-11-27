@@ -11,28 +11,43 @@ export const StatisticSection = styled.section`
 
 export const Title = styled.h2`
   font-family: 'Poppins';
-  font-weight: 500;
+  font-weight: 700;
   font-size: 40px;
   line-height: 60px;
   color: #016c19;
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
 `;
 
 export const StatList = styled.ul`
-  list-style: none;
   display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 5px;
+  border-color: black;
 `;
 
 export const Item = styled.li`
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: auto;
-  border: 1px solid black;
-  list-style: none;
+  display: block;
+  width: 100px;
   margin: 0;
-  padding: 10px;
+  padding: 20px;
+  background-color: rgb(109, 110, 110);
+  box-shadow: 0px 4px 4px hsla(5, 0%, 0%, 0.25);
+  text-align: center;
 `;
 
-export const Label = styled.span``;
+export const Label = styled.span`
+  display: block;
+  font-size: 20px;
+  color: white;
+`;
 
-export const Percentage = styled.span``;
+export const Percentage = styled.span`
+  display: block;
+  font-size: 30px;
+  color: white;
+`;

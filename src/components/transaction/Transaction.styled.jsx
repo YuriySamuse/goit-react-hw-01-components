@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const Table = styled.table`
   font-size: 20px;
-  width: 900px;
+  width: 500px;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid rgb(221, 216, 216);

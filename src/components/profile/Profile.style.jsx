@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Card = styled.div`
+export const Card = styled.section`
   width: 500px;
   margin-top: 20px;
   margin-left: auto;
