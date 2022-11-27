@@ -6,6 +6,7 @@ export const Table = styled.table`
   margin-left: auto;
   margin-right: auto;
   border: 1px solid rgb(221, 216, 216);
+  box-shadow: 0px 4px 4px 4px hsla(0, 0%, 0%, 0.15);
 `;
 
 export const Thead = styled.thead`

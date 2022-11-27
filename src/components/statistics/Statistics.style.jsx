@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { setBg } from 'utils/RandomColor';
 
 export const StatisticSection = styled.section`
   width: 500px;
@@ -35,7 +36,7 @@ export const Item = styled.li`
   width: 100px;
   margin: 0;
   padding: 20px;
-  background-color: rgb(109, 110, 110);
+  background-color: ${setBg};
   box-shadow: 0px 4px 4px hsla(5, 0%, 0%, 0.25);
   text-align: center;
 `;

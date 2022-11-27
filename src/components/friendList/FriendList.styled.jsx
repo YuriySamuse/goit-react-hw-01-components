@@ -13,25 +13,26 @@ export const Item = styled.li`
   align-items: center;
   margin-top: 20px;
   padding: 10px 30px;
-  box-shadow: 0px 2px 2px 2px rgba(17, 16, 16, 0.65);
+  box-shadow: 0px 4px 4px 4px hsla(0, 0%, 0%, 0.15);
 `;
+
+const setBgColor = props => {
+  switch (props.isOnline) {
+    case true:
+      return 'green';
+    case false:
+      return 'red';
+    default:
+      return 'gray';
+  }
+};
 
 export const Status = styled.span`
   display: inline;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: ${props => {
-    console.log(props.isOnline);
-    switch (props.isOnline) {
-      case true:
-        return 'green';
-      case false:
-        return 'red';
-      default:
-        return 'gray';
-    }
-  }};
+  background-color: ${setBgColor};
 `;
 
 export const Avatar = styled.img`
