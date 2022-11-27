@@ -10,7 +10,7 @@ import {
 function FriendListItem({ avatar, name, isOnline, id }) {
   return (
     <Item key={id}>
-      <Status>{isOnline}</Status>
+      <Status isOnline={isOnline}>{isOnline}</Status>
       <Avatar src={avatar} alt={name} width="48" />
       <Name>{name}</Name>
     </Item>

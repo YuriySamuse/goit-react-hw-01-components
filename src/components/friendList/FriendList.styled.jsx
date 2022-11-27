@@ -21,7 +21,17 @@ export const Status = styled.span`
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: ${props => {
+    console.log(props.isOnline);
+    switch (props.isOnline) {
+      case true:
+        return 'green';
+      case false:
+        return 'red';
+      default:
+        return 'gray';
+    }
+  }};
 `;
 
 export const Avatar = styled.img`
