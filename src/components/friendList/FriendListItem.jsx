@@ -5,11 +5,11 @@ import {
   Avatar,
   Name,
   Status,
-} from 'components/friendList/FriendList.styled';
+} from 'components/FriendList/FriendList.styled';
 
-function FriendListItem({ avatar, name, isOnline, id }) {
+function FriendListItem({ avatar, name, isOnline }) {
   return (
-    <Item key={id}>
+    <Item>
       <Status isOnline={isOnline}>{isOnline}</Status>
       <Avatar src={avatar} alt={name} width="48" />
       <Name>{name}</Name>
@@ -20,8 +20,7 @@ function FriendListItem({ avatar, name, isOnline, id }) {
 FriendListItem.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  isOnline: PropTypes.bool,
-  id: PropTypes.number,
+  isOnline: PropTypes.bool.isRequired,
 };
 
 export default FriendListItem;

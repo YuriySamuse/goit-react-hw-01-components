@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import { FriendListStyle } from 'components/friendList/FriendList.styled';
+import { FriendListStyle } from 'components/FriendList/FriendList.styled';
 
-import FriendListItem from 'components/friendList/FriendListItem';
+import FriendListItem from 'components/FriendList/FriendListItem';
 
 function FriendList({ friends }) {
   //   console.log(friends);

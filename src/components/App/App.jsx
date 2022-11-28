@@ -1,12 +1,12 @@
-import Profile from 'components/profile/Profile';
-import Statistics from '../statistics/Statistics';
-import FriendList from 'components/friendList/FriendList';
-import TransactionHistory from 'components/transaction/TransactionHistory';
+import Profile from 'components/Profile/Profile';
+import Statistics from '../Statistics/Statistics';
+import FriendList from 'components/FriendList/FriendList';
+import TransactionHistory from 'components/Transaction/TransactionHistory';
 
-import user from 'components/profile/user.json';
-import data from 'components/statistics/data.json';
-import friends from 'components/friendList/friends.json';
-import transactions from 'components/transaction/transactions.json';
+import user from 'components/Profile/user.json';
+import data from 'components/Statistics/data.json';
+import friends from 'components/FriendList/friends.json';
+import transactions from 'components/Transaction/transactions.json';
 
 import { Container } from 'components/App/App.styled';
 

@@ -7,19 +7,20 @@ import {
   Item,
   Label,
   Percentage,
-} from 'components/statistics/Statistics.style';
+} from 'components/Statistics/Statistics.style';
 
 function Statistics({ title, stats }) {
   // console.log(stats);
   return (
     <StatisticSection>
-      <Title>{title}</Title>
+      {title && <Title>{title}</Title>}
+      {/* <Title>{title}</Title> */}
 
       <StatList>
-        {stats.map(stat => (
-          <Item key={stat.id}>
-            <Label>.{stat.label}</Label>
-            <Percentage>{stat.percentage}%</Percentage>
+        {stats.map(({ id, label, percentage }) => (
+          <Item key={id}>
+            <Label>.{label}</Label>
+            <Percentage>{percentage}%</Percentage>
           </Item>
         ))}
       </StatList>
@@ -33,6 +34,7 @@ Statistics.propTypes = {
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
     })
   ),
 };

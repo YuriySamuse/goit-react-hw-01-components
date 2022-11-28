@@ -9,11 +9,17 @@ import {
   Block,
   Label,
   Quantity,
-} from 'components/profile/Profile.style';
+} from 'components/Profile/Profile.style';
 // import css from 'components/profile/Profile.module.css';
 import PropTypes from 'prop-types';
 
-function Profile({ username, tag, location, avatar, stats }) {
+function Profile({
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) {
   return (
     <Card>
       <Description>
@@ -26,15 +32,15 @@ function Profile({ username, tag, location, avatar, stats }) {
       <Stats>
         <Block>
           <Label>Followers</Label>
-          <Quantity>{stats.followers}</Quantity>
+          <Quantity>{followers}</Quantity>
         </Block>
         <Block>
           <Label>Views</Label>
-          <Quantity>{stats.views}</Quantity>
+          <Quantity>{views}</Quantity>
         </Block>
         <Block>
           <Label>Likes</Label>
-          <Quantity>{stats.likes}</Quantity>
+          <Quantity>{likes}</Quantity>
         </Block>
       </Stats>
     </Card>

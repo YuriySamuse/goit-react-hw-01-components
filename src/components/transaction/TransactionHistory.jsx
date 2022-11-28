@@ -6,7 +6,7 @@ import {
   Th,
   Tbody,
   Td,
-} from 'components/transaction/Transaction.styled.jsx';
+} from 'components/Transaction/Transaction.styled.jsx';
 
 function TransactionHistory({ items }) {
   //   console.log(items);
